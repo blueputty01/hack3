@@ -9,6 +9,6 @@ export default function App() {
   );
 }
 
-const downButton = () => {
-  return <h1>wfwefwef</h1>;
+export const downButton = () => {
+  return <button className="outline-info">↓</button>;
 };
