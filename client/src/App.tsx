@@ -1,5 +1,6 @@
 import i from './classysalt.png';
 import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App() {
   return (

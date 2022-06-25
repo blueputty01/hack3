@@ -29,7 +29,7 @@ module.exports = (env, options) => {
           use: ['babel-loader'],
         },
         {
-          test: /\.s[ac]ss$/i,
+          test: /\.(s[ac]ss|less|css)$/i,
           use: [
             // Creates `style` nodes from JS strings
             { loader: 'style-loader' },
@@ -37,14 +37,6 @@ module.exports = (env, options) => {
             // Compiles Sass to CSS
             {
               loader: 'css-loader',
-              options: {
-                modules: {
-                  // getLocalIdent: getCSSModuleLocalIdent,
-                  localIdentName: '[name]_[local]_[hash:base64]',
-                },
-                importLoaders: 2,
-                sourceMap: true,
-              },
             },
             { loader: 'sass-loader' },
           ],
