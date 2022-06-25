@@ -14,8 +14,8 @@ export default function App() {
       <div>
         <h1
           style={{
-            paddingTop: 50,
-            paddingBottom: 5,
+            paddingTop: 30,
+            paddingBottom: 0,
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
@@ -24,10 +24,10 @@ export default function App() {
         >
           Hi, welcome to
         </h1>
-        <img src={i} alt="..." height={650} width={825}></img>
+        <img src={i} alt="..." height={550} width={750}></img>
         <div
           style={{
-            paddingTop: 30,
+            paddingTop: 5,
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
@@ -38,9 +38,9 @@ export default function App() {
               onClick={() => {
                 console.log('This thing works');
               }}
-              variant="primary"
+              variant="btn btn-outline-primary"
             >
-              Please for fucks sake fucking work
+              Upload Image
             </Button>
           </div>
         </div>
