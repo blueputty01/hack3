@@ -34,5 +34,5 @@
     "src/setupTests.ts"
   ],
   "types": ["typePatches"],
-  "include": ["client", "server"]
+  "include": ["src"]
 }
