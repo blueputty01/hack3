@@ -1,0 +1,23 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": ["airbnb", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    }
+  },
+  "plugins": ["prettier", "react"],
+  "parser": "@babel/eslint-parser",
+  "rules": {
+    "no-param-reassign": 0
+  },
+  "ignorePatterns": ["/build", "/node_modules"]
+}
