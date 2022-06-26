@@ -4,15 +4,15 @@ import api from './api';
 
 export default function Process() {
   const a = new api();
-  const [res, setRes] = useState('');
+  const [result, setResult] = useState('');
   const responseHandler = async (data: FormData) => {
-    const r = await a.getSalinity(data);
-    setRes(r);
+    const response = await a.getSalinity(data);
+    setResult(response.data);
   };
   return (
     <div>
       <Upload responseHandler={responseHandler}></Upload>
-      <div>{res}</div>
+      <div>{result}</div>
     </div>
   );
 }
