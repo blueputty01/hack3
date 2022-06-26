@@ -1,4 +1,4 @@
-# Hack3 backend 2022 | Server Side
+# Hack3 2022 | Server Side
 
 ## ⚡ Setup
 
@@ -15,17 +15,13 @@ Server starts on localhost port 5000. POST request using URLs below. Key for fil
 
 ### Salt Water Intrusion Classification
 
-http://localhost:5000/api/classify
+http://localhost:5000/api/salinity
 
-### Salt Water Concentration Percent Using Image Of Water
+### Dependencies
 
-http://localhost:5000/api/water
-
-### Dependencies 
-Salt Water and Water model should be located in `./model` directory at root level.
+Salt water model should be located in `./model` directory at root level.
 
 ## ⚙️ Technologies Used
 
 - Python, Tensorflow
 - TypeScript, Express
-
