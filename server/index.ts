@@ -2,6 +2,7 @@ import express, { Request, Response } from "express";
 const cors = require("cors");
 const multer = require("multer");
 const os = require("os");
+const { exec } = require("child_process");
 
 interface MulterRequest extends Request {
   file: any;
@@ -9,7 +10,6 @@ interface MulterRequest extends Request {
 
 const pythonClassifierPath = "imageML.py";
 
-const { exec } = require("child_process");
 const upload = multer({ dest: os.tmpdir() });
 
 const app = express();
