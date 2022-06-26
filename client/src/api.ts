@@ -10,10 +10,10 @@ const getPrediction = (file: FormData, api: string) => {
   });
 };
 
-class Server {
+class api {
   getSalinity(file: FormData): Promise<any> {
     return getPrediction(file, 'salinity');
   }
 }
 
-export default Server;
+export default api;
