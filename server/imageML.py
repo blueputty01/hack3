@@ -6,15 +6,14 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 
-fileLocation = sys.argv[2]
-type = sys.argv[1]
+fileLocation = sys.argv[1]
 
 stderr = sys.stderr  # disable stderr
 sys.stderr = open(os.devnull, 'w')
 image = tf.keras.preprocessing.image
 sys.stderr = stderr  # re-enable stderr
 
-## UTIL CODE CREDIT GIVEN TO AUTHOR
+# UTIL CODE CREDIT GIVEN TO AUTHOR
 
 
 def dice_coef(y_true, y_pred):
@@ -75,6 +74,7 @@ def get_iou_vector(A, B):
 def my_iou_metric(label, pred):
     # Tensorflow version
     return tf.py_func(get_iou_vector, [label, pred > 0.5], tf.float64)
+
 
 model = load_model('./keras.model', custom_objects={
                    "bce_dice_loss": bce_dice_loss, "my_iou_metric": my_iou_metric})
