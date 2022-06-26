@@ -1,0 +1,13 @@
+.barContainer {
+  width: 5rem;
+  border: 1px solid #00b0ff;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 1rem;
+  padding: 0;
+
+  .bar {
+    height: 1rem;
+    background-color: #00b0ff;
+  }
+}
