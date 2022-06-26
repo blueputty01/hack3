@@ -1,5 +1,5 @@
-import Button from 'react-bootstrap/Button';
 import Header from './Header';
+import Upload from './Upload';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App() {
@@ -11,19 +11,11 @@ export default function App() {
         alignItems: 'center',
         flexDirection: 'column',
         height: '100vh',
+        padding: '3rem',
       }}
     >
       <Header></Header>
-      <div style={{ paddingBottom: 25 }}>
-        <Button
-          onClick={() => {
-            console.log('This thing works');
-          }}
-          variant="btn btn-outline-primary"
-        >
-          Upload Image
-        </Button>
-      </div>
+      <Upload></Upload>
     </main>
   );
 }

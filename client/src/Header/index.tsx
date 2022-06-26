@@ -6,7 +6,6 @@ export default function Header() {
     <React.Fragment>
       <h1
         style={{
-          paddingTop: 30,
           paddingBottom: 0,
           display: 'flex',
           justifyContent: 'center',
