@@ -10,7 +10,14 @@ export default function Process() {
     setResult(response.data);
   };
   return (
-    <div>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
       <Upload responseHandler={responseHandler}></Upload>
       <div>{result}</div>
     </div>
