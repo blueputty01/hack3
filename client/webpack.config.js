@@ -8,7 +8,7 @@ module.exports = (env, options) => {
   const devOptions = prod ? null : { devtool: 'eval-source-map' };
   return {
     ...devOptions,
-    entry: './src/index.tsx',
+    entry: ['./src/index.tsx'],
     output: {
       filename: '[name].js',
       path: path.resolve(__dirname, './build'),

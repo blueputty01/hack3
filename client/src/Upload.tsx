@@ -31,7 +31,7 @@ export default function Upload(props: UploadProps) {
         type="file"
         id="file"
         ref={inputFileButton}
-        className="hidden"
+        style={{ display: 'none' }}
         onChange={onFileUpload}
         accept=".jpeg,.jpg"
       />

@@ -1,16 +1,21 @@
-import React from 'react';
 import BannerImage from './banner.png';
 
 export default function Header() {
   return (
-    <React.Fragment>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%',
+        alignItems: 'center',
+      }}
+    >
       <h1
         style={{
           paddingBottom: 0,
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          flexShrink: '1',
         }}
         className="display-6 text-6xl font-black"
       >
@@ -26,6 +31,6 @@ export default function Header() {
           height: 'auto',
         }}
       ></img>
-    </React.Fragment>
+    </div>
   );
 }
