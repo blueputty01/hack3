@@ -1,4 +1,5 @@
 import BannerImage from './banner.png';
+import Process from './Process';
 
 export default function Header() {
   return (
@@ -31,6 +32,7 @@ export default function Header() {
           height: 'auto',
         }}
       ></img>
+      <Process></Process>
     </div>
   );
 }
