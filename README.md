@@ -20,5 +20,15 @@ Youtube video:
 
 ## ⚙️ Technologies Used
 
-- Frontend: React and TypeScript, Bootstrap, SASS
-- Backend: Node.js, Express,js, Python, Tensorflow
+- **Frontend:** React and TypeScript, Bootstrap, SASS
+- **Backend:** Node.js, Express,js, Python, Tensorflow
+
+## Acknowledgements
+
+Huge thanks to
+
+- (Azfar Mohamed)[github.com/azfarmo]
+- (Raghav Paratkar)[github.com/raghavparatkar]
+- (Aditya Bilawar)[github.com/adityabilawar]
+
+for the fantastic teamwork, the Hack3 organizers, and the judges!
