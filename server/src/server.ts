@@ -17,29 +17,21 @@ app.use(express.json());
 app.use(cors());
 
 app.post(
-  "/api/classify",
+  "/api/salinity",
   upload.single("file"),
   function (req: Request, res: Response) {
-    getPrediction("salt water", req, res);
+    getPrediction("", req, res);
   }
 );
 
-app.post(
-  "/api/water",
-  upload.single("file"),
-  function (req: Request, res: Response) {
-    getPrediction("water", req, res);
-  }
-);
-
-function getPrediction(type: string, req: Request, res: Response) {
+function getPrediction(args: string, req: Request, res: Response) {
   const file = (req as MulterRequest).file;
 
   const successCallback = (contents: string) => {
     res.send(contents);
   };
 
-  const command = `python ${pythonClassifierPath} ${type} ${file.path}`;
+  const command = `python ${pythonClassifierPath} ${args} ${file.path}`;
 
   console.log(command, __dirname);
 
