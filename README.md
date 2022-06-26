@@ -23,7 +23,7 @@ Youtube video:
 - **Frontend:** React and TypeScript, Bootstrap, SASS
 - **Backend:** Node.js, Express,js, Python, Tensorflow
 
-## Acknowledgements
+## 🫂 Acknowledgements
 
 Huge thanks to
 
