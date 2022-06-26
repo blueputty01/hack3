@@ -27,8 +27,8 @@ Youtube video:
 
 Huge thanks to
 
-- [Azfar Mohamed](github.com/azfarmo)
-- [Raghav Paratkar](github.com/raghavparatkar)
-- [Aditya Bilawar](github.com/adityabilawar)
+- [Azfar Mohamed](https://github.com/azfarmo)
+- [Raghav Paratkar](https://github.com/raghavparatkar)
+- [Aditya Bilawar](https://github.com/adityabilawar)
 
 for the fantastic teamwork, the Hack3 organizers, and the judges!
