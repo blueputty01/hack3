@@ -1,4 +1,4 @@
-# Hack3 2022 | Server Side
+# Hack3 2022 | Server
 
 ## ⚡ Setup
 
@@ -19,7 +19,7 @@ http://localhost:5000/api/salinity
 
 ### Dependencies
 
-Salt water model should be located in `./model` directory at root level.
+Salt water model (generated in Google Colab) must be located in `./server` directory under the name `keras.model`.
 
 ## ⚙️ Technologies Used
 
