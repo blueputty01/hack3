@@ -2,7 +2,9 @@
 
 ## ❓Introduction
 
-We request the user for a seismic video of the body of water, which shows the boundaries of different rock types. We consider each frame in the image, and assign a score using the ML model between [0-9] on the amount of salinity (learn more about this score in "How we built it" . You can see a video at (https://youtu.be/8vPWhWSMnG8) of this process, and the code to generate this video can be found in the Google Colab linked below.
+We request the user for a seismic video of the body of water, which shows the boundaries of different rock types. We consider each frame in the image, and assign a score using the ML model between [0-9] on the amount of salinity (learn more about this score in "How we built it" on the Devpost. You can see a video at (https://youtu.be/8vPWhWSMnG8) of this process, and the code to generate this video can be found in the Google Colab linked in the Devpost.
+
+This repository contains the server and client code for a live demonstration of the machine-learning model. 
 
 ## 📺 Demonstration
 
